@@ -1,22 +1,18 @@
 #!/usr/bin/env bash
-# This script loops from 1 to 10
-# display bad luck for the 4th loop iteration
-# display good luck for the 8the loop iteration
-# display Best School for the other iterations
+# A script that loops through 1 to 10 using while
 
-VAR=0
+i=1
 
-while [ $VAR -lt 10 ]
+while [ $i -le 10 ]
 do
-	if [ $VAR -eq 3 ]
-	then
-		echo "bad luck"
-	elif [ $VAR -eq 7 ]
-	then
-		echo "good luck"
-	else
-		echo "Best School"
-	fi
-
-	((VAR++))
-done 
+    if [ $i -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ $i -eq 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    ((i++))
+done

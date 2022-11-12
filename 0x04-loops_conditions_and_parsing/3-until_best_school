@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# This script displays Best School 10 times
+# A script that displays Best School 10 times using until
 
-VAR=0
+i=1
 
-until [ $VAR == 10 ]
-do 
-	echo "Best School"
-	((VAR++))
-done 
+until [ $i -gt 10 ]
+do
+    echo "Best School"
+    ((i++))
+done
